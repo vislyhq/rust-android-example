@@ -1,5 +1,5 @@
-#[cfg(target_os="android")]
-#[allow(non_snake_case)]
+#![cfg(target_os="android")]
+#![allow(non_snake_case)]
 
 use std::ffi::{CString, CStr};
 use jni::JNIEnv;
