@@ -1,0 +1,15 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["Emil Sjölander <emil@visly.app>"]
+edition = "2018"
+
+[dependencies]
+jni = { version = "0.10.2", default-features = false }
+
+[profile.release]
+lto = true
+
+[lib]
+name = "rust"
+crate-type = ["cdylib"]
